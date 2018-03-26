@@ -1,5 +1,50 @@
 # Changelog
 
+1.5.2
+
+- chore(package): update mongoose to version 5.0.0
+- chore(package): update mocha to version 5.0.0
+
+1.5.1
+
+- fix: 1.5.0 would add entries from the schema that were not in the original transform (thanks to @proswdev)
+
+1.5.0
+
+refactor: Replaced get and delete path parts with mpath
+
+I had wanted to get rid of the dot-path code for a long time. With this
+commit mpath is introduced. The same package used in Mongoose. It could
+not replace the set function, since it has no create functionality but
+only set.
+
+I also cleaned up the options and test section so they are easier to
+reason about.
+
+Overall a slimmer package.
+
+1.4.2
+
+Chore: Mocha dev dependency upgrade.
+New: Added license
+Fix: Minor style changes
+
+1.4.1
+
+Chore: Mongoose dev dependency upgrade
+
+1.4.0
+
+Support subdocument schema transformations (thanks to @Bajix)
+
+1.3.0
+
+New: Nested document can be a Schema (thanks to @lykmapipo)
+
+1.2.0
+
+Fixed regressions and added linting
+
 1.1.0
 
 Rewrote to getPathnames to rely on schema tree rather than scheme path. This
